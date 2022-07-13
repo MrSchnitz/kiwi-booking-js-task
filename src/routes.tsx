@@ -1,6 +1,7 @@
 import { Loading } from "@kiwicom/orbit-components";
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navigation from "./components/Navigation/Navigation";
 
 const AsyncLandingPage = lazy(
   () => import("./containers/LandingPage/LandingPage")
@@ -9,6 +10,7 @@ const AsyncLandingPage = lazy(
 export function AppRoutes() {
   return (
     <BrowserRouter>
+      <Navigation />
       <Routes>
         <Route
           path="/"
