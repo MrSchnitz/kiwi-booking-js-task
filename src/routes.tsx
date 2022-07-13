@@ -1,6 +1,10 @@
 import { Loading } from "@kiwicom/orbit-components";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+const AsyncLandingPage = lazy(
+  () => import("./containers/LandingPage/LandingPage")
+);
 
 export function AppRoutes() {
   return (
@@ -10,7 +14,7 @@ export function AppRoutes() {
           path="/"
           element={
             <Suspense fallback={<Loading type="pageLoader" />}>
-              <h1>Landing Page</h1>
+              <AsyncLandingPage />
             </Suspense>
           }
         />
