@@ -18,6 +18,7 @@ import {
 import { SearchFormWrapper } from "./SearchForm.styles";
 import { City, FlightLocation } from "./SearchForm.types";
 import SearchAutoCompleteInput from "../SearchAutoCompleteInput/SearchAutoCompleteInput";
+import DateInput from "../DateInput/DateInput";
 
 interface IProps {
   onSearch?(searchParams: ISearchFormData): void;
@@ -59,8 +60,25 @@ const SearchForm = React.memo(({ onSearch }: IProps) => {
     }
   }, [dispatch, searchParams]);
 
+  const onDateInputChange = useCallback(
+    (dateValue: string, param: SearchParam): void => {
+      setSearchParams({
+        ...Object.fromEntries(searchParams.entries()),
+        [param]: dateValue,
+      });
+      dispatch(
+        SearchFormAPI.setSearchFormData({
+          ...searchFormData,
+          [param]: dateValue,
+        })
+      );
+    },
+    [dispatch, searchFormData, searchParams, setSearchParams]
+  );
+
   const onLocationInputChange = useCallback(
     (value: string, param: SearchParam): void => {
+      console.log("AAA", value, param);
       setActiveInput(param);
       dispatch(
         param === SearchParam.ORIGIN
@@ -88,14 +106,17 @@ const SearchForm = React.memo(({ onSearch }: IProps) => {
         setActiveInput(null);
       }
     },
-    [dispatch]
+    [dispatch, activeInput, searchParams, searchFormData, setSearchParams]
   );
 
-  const onSelectedCityButtonClick = useCallback((param: SearchParam): void => {
-    const searchParamsCopy = Object.fromEntries(searchParams.entries());
-    delete searchParamsCopy[param];
-    setSearchParams(searchParamsCopy);
-  }, []);
+  const onSelectedCityButtonClick = useCallback(
+    (param: SearchParam): void => {
+      const searchParamsCopy = Object.fromEntries(searchParams.entries());
+      delete searchParamsCopy[param];
+      setSearchParams(searchParamsCopy);
+    },
+    [searchParams, setSearchParams]
+  );
 
   const onSearchClick = (): void => {
     const searchParamsCopy = Object.fromEntries(searchParams.entries());
@@ -129,25 +150,41 @@ const SearchForm = React.memo(({ onSearch }: IProps) => {
         align="center"
         desktop={{ direction: "row" }}
       >
-        <SearchAutoCompleteInput
-          type={SearchParam.ORIGIN}
-          activeInput={activeInput}
-          locations={locations}
-          searchFormData={searchFormData}
-          value={originSearchPhrase}
-          onLocationInputChange={onLocationInputChange}
-          onSelectLocation={onSelectLocation}
-          onSelectedCityButtonClick={onSelectedCityButtonClick}
+        <Stack>
+          <SearchAutoCompleteInput
+            type={SearchParam.ORIGIN}
+            activeInput={activeInput}
+            locations={locations}
+            searchFormData={searchFormData}
+            value={originSearchPhrase}
+            onLocationInputChange={onLocationInputChange}
+            onSelectLocation={onSelectLocation}
+            onSelectedCityButtonClick={onSelectedCityButtonClick}
+          />
+        </Stack>
+        <Stack>
+          <SearchAutoCompleteInput
+            type={SearchParam.DESTINATION}
+            activeInput={activeInput}
+            locations={locations}
+            searchFormData={searchFormData}
+            value={destinationSearchPhrase}
+            onLocationInputChange={onLocationInputChange}
+            onSelectLocation={onSelectLocation}
+            onSelectedCityButtonClick={onSelectedCityButtonClick}
+          />
+        </Stack>
+        <DateInput
+          type={SearchParam.DATE_FROM}
+          value={searchFormData[SearchParam.DATE_FROM]}
+          prefix="Departure"
+          onChange={onDateInputChange}
         />
-        <SearchAutoCompleteInput
-          type={SearchParam.DESTINATION}
-          activeInput={activeInput}
-          locations={locations}
-          searchFormData={searchFormData}
-          value={destinationSearchPhrase}
-          onLocationInputChange={onLocationInputChange}
-          onSelectLocation={onSelectLocation}
-          onSelectedCityButtonClick={onSelectedCityButtonClick}
+        <DateInput
+          type={SearchParam.DATE_TO}
+          value={searchFormData[SearchParam.DATE_TO]}
+          prefix="Return"
+          onChange={onDateInputChange}
         />
         <Button
           type="primary"

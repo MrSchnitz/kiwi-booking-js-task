@@ -7,6 +7,7 @@ import { AppRoutes } from "./routes";
 
 // CSS imports
 import "./index.css";
+import "react-datepicker/dist/react-datepicker.css";
 
 const store = configureAppStore();
 
