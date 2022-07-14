@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateInput should render basic component 1`] = `
+<div>
+  <div
+    class="react-datepicker-wrapper"
+  >
+    <div
+      class="react-datepicker__input-container"
+    >
+      <div
+        class="InputField__Field-sc-jjv066-0 koAYkz"
+      >
+        <div
+          class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+        >
+          <div
+            class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+          >
+            From
+          </div>
+          <input
+            aria-labelledby="1"
+            class="InputField__Input-sc-jjv066-6 kPMZTv"
+            data-state="ok"
+            id="1"
+            placeholder="Set date..."
+            type="text"
+            value=""
+          />
+          <div
+            class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DateInput should rerender on value change 1`] = `
+<div>
+  <div
+    class="react-datepicker-wrapper"
+  >
+    <div
+      class="react-datepicker__input-container"
+    >
+      <div
+        class="InputField__Field-sc-jjv066-0 koAYkz"
+      >
+        <div
+          class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+        >
+          <div
+            class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+          >
+            From
+          </div>
+          <input
+            aria-labelledby="2"
+            class="InputField__Input-sc-jjv066-6 kPMZTv"
+            data-state="ok"
+            id="2"
+            placeholder="Set date..."
+            type="text"
+            value="22/07/2022"
+          />
+          <div
+            class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DateInput should rerender on value change 2`] = `
+<div>
+  <div
+    class="react-datepicker-wrapper"
+  >
+    <div
+      class="react-datepicker__input-container"
+    >
+      <div
+        class="InputField__Field-sc-jjv066-0 koAYkz"
+      >
+        <div
+          class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+        >
+          <div
+            class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+          >
+            From
+          </div>
+          <input
+            aria-labelledby="2"
+            class="InputField__Input-sc-jjv066-6 kPMZTv"
+            data-state="ok"
+            id="2"
+            placeholder="Set date..."
+            type="text"
+            value="30/08/2023"
+          />
+          <div
+            class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
