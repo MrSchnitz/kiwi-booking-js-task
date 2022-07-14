@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageLoader should render basic component 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ hfDjeB"
+  >
+    <div
+      class="Loading__StyledLoading-sc-199xidk-0 bMyNJA"
+    >
+      <svg
+        class="Loading__StyledSpinner-sc-199xidk-2 fBxWoj"
+        viewBox="0 0 40 40"
+      >
+        <circle
+          class="Loading__StyledSpinnerCircle-sc-199xidk-3 emBrZC"
+          cx="50%"
+          cy="50%"
+          r="18"
+          type="pageLoader"
+        />
+      </svg>
+      <div
+        class="Loading__StyledLoadingText-sc-199xidk-1 cdYraH"
+        type="pageLoader"
+      />
+    </div>
+  </div>
+</div>
+`;

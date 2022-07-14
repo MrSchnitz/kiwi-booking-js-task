@@ -39,7 +39,7 @@ export type SearchParams = {
 
 const NUMBER_OF_SKELETONS = 10;
 
-const SearchPage = React.memo(() => {
+export default function SearchPage() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
@@ -163,6 +163,4 @@ const SearchPage = React.memo(() => {
       </SearchPageResultsWrapper>
     </SearchPageLayout>
   );
-});
-
-export default SearchPage;
+}
