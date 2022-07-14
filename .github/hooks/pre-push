@@ -1,0 +1,3 @@
+#!/bin/sh
+
+npx tsc --noEmit --project . && npm test -- --watchAll=false

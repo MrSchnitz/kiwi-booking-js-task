@@ -29,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "install-hooks": "git config core.hooksPath .github/hooks"
   },
   "eslintConfig": {
     "extends": [
