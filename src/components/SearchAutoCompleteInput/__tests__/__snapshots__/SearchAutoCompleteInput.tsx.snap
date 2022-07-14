@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchAutoCompleteInput should render basic component 1`] = `
+<div>
+  <div
+    class="sc-dkzDqf fNTABv"
+  >
+    <div
+      class="InputField__Field-sc-jjv066-0 koAYkz"
+    >
+      <div
+        class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+      >
+        <div
+          class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+        >
+          From
+        </div>
+        <input
+          aria-labelledby="1"
+          class="InputField__Input-sc-jjv066-6 kPMZTv"
+          data-state="ok"
+          id="1"
+          type="text"
+          value=""
+        />
+        <div
+          class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SearchAutoCompleteInput should render popover when locations are not empty 1`] = `
+<div>
+  <div
+    class="sc-dkzDqf fNTABv"
+  >
+    <div
+      class="InputField__Field-sc-jjv066-0 koAYkz"
+    >
+      <div
+        class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+      >
+        <div
+          class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+        >
+          From
+        </div>
+        <input
+          aria-labelledby="2"
+          class="InputField__Input-sc-jjv066-6 kPMZTv"
+          data-state="ok"
+          id="2"
+          type="text"
+          value=""
+        />
+        <div
+          class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-hKMtZM hmtMuM"
+    >
+      <div
+        class="sc-gsnTZi cDgEyT"
+      >
+        <div
+          class="TileGroup__StyledTileGroup-sc-tuzvgn-0 jirIHz"
+        >
+          <div
+            class="TileWrapper__StyledTileWrapper-sc-u2u00m-0 gHuiEQ"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="TileContent__StyledTileContent-sc-1kfck64-0 enwTwt"
+            >
+              Praha
+            </div>
+          </div>
+          <div
+            class="TileWrapper__StyledTileWrapper-sc-u2u00m-0 gHuiEQ"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="TileContent__StyledTileContent-sc-1kfck64-0 enwTwt"
+            >
+              Berlin
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SearchAutoCompleteInput should render with input value 1`] = `
+<div>
+  <div
+    class="sc-dkzDqf fNTABv"
+  >
+    <div
+      class="InputField__Field-sc-jjv066-0 koAYkz"
+    >
+      <div
+        class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+      >
+        <div
+          class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+        >
+          From
+        </div>
+        <input
+          aria-labelledby="4"
+          class="InputField__Input-sc-jjv066-6 kPMZTv"
+          data-state="ok"
+          id="4"
+          type="text"
+          value="Praha"
+        />
+        <div
+          class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

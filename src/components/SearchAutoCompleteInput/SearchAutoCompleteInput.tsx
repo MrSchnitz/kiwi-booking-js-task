@@ -5,12 +5,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import {
-  Button,
-  InputField,
-  Tile,
-  TileGroup,
-} from "@kiwicom/orbit-components";
+import { Button, InputField, Tile, TileGroup } from "@kiwicom/orbit-components";
 import { ISearchFormData, SearchParam } from "../SearchForm/SearchFormAPI";
 import { SearchFormPopoverContentWrapper } from "../SearchForm/SearchForm.styles";
 import { CloseCircle } from "@kiwicom/orbit-components/icons";
