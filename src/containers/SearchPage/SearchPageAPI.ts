@@ -13,7 +13,7 @@ export interface SearchFlightResponse {
  * API State interface
  */
 export interface ISearchPageApi {
-  searchResults: Array<any>;
+  searchResults: Array<FlightSearchResult>;
   isLoading: boolean;
 }
 

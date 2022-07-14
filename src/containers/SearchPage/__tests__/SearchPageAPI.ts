@@ -105,7 +105,7 @@ describe("SearchPageAPI", () => {
 
   describe("Selector tests", () => {
     const searchPageApiState: ISearchPageApi = {
-      searchResults: MOCK_FLIGHT_RESULTS,
+      searchResults: MOCK_FLIGHT_RESULTS as Array<FlightSearchResult>,
       isLoading: false,
     };
 
