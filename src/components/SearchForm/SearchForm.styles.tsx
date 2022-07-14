@@ -5,22 +5,22 @@ export const SearchFormWrapper = styled.div`
 `;
 
 export const SearchFormPopoverContentWrapper = styled.div`
-    max-height: 300px;
-    overflow-y: auto;
-    
-    &::-webkit-scrollbar {
-        width: 5px;
-    }
+  max-height: 300px;
+  overflow-y: auto;
 
-    &::-webkit-scrollbar-track {
-        background: #ffffff;
-    }
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
 
-    &::-webkit-scrollbar-thumb {
-        background: #00A991;
-    }
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
 
-    &::-webkit-scrollbar-thumb:hover {
-        background: #007F6D;
-    }
+  &::-webkit-scrollbar-thumb {
+    background: #00a991;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #007f6d;
+  }
 `;
