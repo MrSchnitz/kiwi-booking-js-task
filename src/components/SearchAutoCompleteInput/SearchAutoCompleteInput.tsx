@@ -8,15 +8,18 @@ import React, {
 import {
   Button,
   InputField,
-  Popover,
   Tile,
   TileGroup,
 } from "@kiwicom/orbit-components";
 import { ISearchFormData, SearchParam } from "../SearchForm/SearchFormAPI";
 import { SearchFormPopoverContentWrapper } from "../SearchForm/SearchForm.styles";
 import { CloseCircle } from "@kiwicom/orbit-components/icons";
-import { City, FlightLocation } from "../SearchForm/SearchForm.types";
 import { useSearchParams } from "react-router-dom";
+import { City, FlightLocation } from "../../types/FlightLocationTypes";
+import {
+  AutoCompletePopover,
+  AutoCompleteWrapper,
+} from "./SearchAutoCompleteInput.styles";
 
 interface IProps {
   activeInput: null | SearchParam;
@@ -55,11 +58,27 @@ const SearchAutoCompleteInput = React.memo(
     }, []);
 
     return (
-      <div ref={wrapperRef}>
-        <Popover
-          opened={isPopoverOpened}
-          noPadding={true}
-          content={
+      <AutoCompleteWrapper ref={wrapperRef}>
+        {searchParams.get(type) && searchFormData[type] ? (
+          <Button
+            type="primary"
+            width="100%"
+            iconRight={<CloseCircle color="tertiary" />}
+            onClick={() => onSelectedCityButtonClick(type)}
+          >
+            {searchFormData[type]}
+          </Button>
+        ) : (
+          <InputField
+            prefix={type === SearchParam.ORIGIN ? "From" : "To"}
+            onChange={onInputChange}
+            value={value}
+            onFocus={onInputFocus}
+            onKeyDown={onInputKeyDown}
+          />
+        )}
+        {isPopoverOpened && (
+          <AutoCompletePopover>
             <SearchFormPopoverContentWrapper>
               <TileGroup>
                 {locations.map((location) => (
@@ -72,28 +91,9 @@ const SearchAutoCompleteInput = React.memo(
                 ))}
               </TileGroup>
             </SearchFormPopoverContentWrapper>
-          }
-        >
-          {searchParams.get(type) && searchFormData[type] ? (
-            <Button
-              type="primary"
-              width="100%"
-              iconRight={<CloseCircle color="tertiary" />}
-              onClick={() => onSelectedCityButtonClick(type)}
-            >
-              {searchFormData[type]}
-            </Button>
-          ) : (
-            <InputField
-              prefix={type === SearchParam.ORIGIN ? "From" : "To"}
-              onChange={onInputChange}
-              value={value}
-              onFocus={onInputFocus}
-              onKeyDown={onInputKeyDown}
-            />
-          )}
-        </Popover>
-      </div>
+          </AutoCompletePopover>
+        )}
+      </AutoCompleteWrapper>
     );
 
     function handleDocumentOnClick(event: MouseEvent): void {

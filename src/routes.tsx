@@ -6,6 +6,9 @@ import Navigation from "./components/Navigation/Navigation";
 const AsyncLandingPage = lazy(
   () => import("./containers/LandingPage/LandingPage")
 );
+const AsyncSearchPage = lazy(
+  () => import("./containers/SearchPage/SearchPage")
+);
 
 export function AppRoutes() {
   return (
@@ -17,6 +20,14 @@ export function AppRoutes() {
           element={
             <Suspense fallback={<Loading type="pageLoader" />}>
               <AsyncLandingPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/search"
+          element={
+            <Suspense fallback={<Loading type="pageLoader" />}>
+              <AsyncSearchPage />
             </Suspense>
           }
         />

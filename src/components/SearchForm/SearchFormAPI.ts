@@ -2,7 +2,10 @@ import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { all, call, debounce, put, takeEvery } from "redux-saga/effects";
 import { RootState } from "../../internals/rootState";
 import { SagaIterator } from "redux-saga";
-import {FlightLocation, FlightLocationsResponse} from "./SearchForm.types";
+import {
+  FlightLocation,
+  FlightLocationsResponse,
+} from "../../types/FlightLocationTypes";
 
 export enum SearchParam {
   ORIGIN = "origin",
@@ -106,7 +109,8 @@ class SearchFormApi {
         this.fetchLocationById,
         searchData[SearchParam.ORIGIN]
       );
-      const location: FlightLocation = (response as FlightLocationsResponse).locations[0];
+      const location: FlightLocation = (response as FlightLocationsResponse)
+        .locations[0];
       searchData[SearchParam.ORIGIN] = location.name;
     }
     if (!!searchData[SearchParam.DESTINATION]) {
@@ -114,7 +118,8 @@ class SearchFormApi {
         this.fetchLocationById,
         searchData[SearchParam.DESTINATION]
       );
-      const location: FlightLocation = (response as FlightLocationsResponse).locations[0];
+      const location: FlightLocation = (response as FlightLocationsResponse)
+        .locations[0];
       searchData[SearchParam.DESTINATION] = location.name;
     }
 
