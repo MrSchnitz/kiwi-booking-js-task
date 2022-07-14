@@ -79,8 +79,8 @@ const SearchForm = React.memo(({ onSearch }: IProps) => {
       setActiveInput(param);
       dispatch(
         param === SearchParam.ORIGIN
-          ? SearchFormAPI.changeFromPhrase(value)
-          : SearchFormAPI.changeToPhrase(value)
+          ? SearchFormAPI.changeOriginPhrase(value)
+          : SearchFormAPI.changeDestinationPhrase(value)
       );
     },
     [dispatch]

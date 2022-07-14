@@ -39,7 +39,7 @@ class SearchPageApi {
   /*
    * SLICE
    */
-  private getInitialState(): ISearchPageApi {
+  public getInitialState(): ISearchPageApi {
     return {
       searchResults: [],
       isLoading: false,
@@ -68,7 +68,7 @@ class SearchPageApi {
   /*
    * SAGAS
    */
-  private *handleSearch({
+  public *handleSearch({
     payload: { origin, destination, dateFrom, dateTo },
   }: PayloadAction<SearchParams>): SagaIterator {
     const { setSearchResults, setIsLoading } = this.slice.actions;
@@ -108,10 +108,12 @@ class SearchPageApi {
   );
 }
 
+export default SearchPageApi.getInstance();
+
 export const {
   actions: SearchPageAPI,
   reducer: SearchPageApiReducer,
-  name,
+  name: SearchPageApiName,
 } = SearchPageApi.getInstance().slice;
 
 export const {
