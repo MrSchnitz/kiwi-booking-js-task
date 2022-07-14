@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchFormUI should render basic component 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ aQlMI"
+  >
+    <div
+      class="Heading__StyledHeading-sc-rrd5d-0 gurnTJ"
+    >
+      Search for flights
+    </div>
+    <div
+      class="Stack__StyledStack-sc-oaff2v-0 hFnGib"
+    >
+      <div
+        class="Stack__StyledStack-sc-oaff2v-0 jrgtzq"
+      >
+        <div
+          class="sc-dkzDqf fNTABv"
+        >
+          <div
+            class="InputField__Field-sc-jjv066-0 koAYkz"
+          >
+            <div
+              class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+            >
+              <div
+                class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+              >
+                From
+              </div>
+              <input
+                aria-labelledby="1"
+                class="InputField__Input-sc-jjv066-6 kPMZTv"
+                data-state="ok"
+                id="1"
+                type="text"
+                value=""
+              />
+              <div
+                class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="Stack__StyledStack-sc-oaff2v-0 jrgtzq"
+      >
+        <div
+          class="sc-dkzDqf fNTABv"
+        >
+          <div
+            class="InputField__Field-sc-jjv066-0 koAYkz"
+          >
+            <div
+              class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+            >
+              <div
+                class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+              >
+                To
+              </div>
+              <input
+                aria-labelledby="2"
+                class="InputField__Input-sc-jjv066-6 kPMZTv"
+                data-state="ok"
+                id="2"
+                type="text"
+                value=""
+              />
+              <div
+                class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="react-datepicker-wrapper"
+      >
+        <div
+          class="react-datepicker__input-container"
+        >
+          <div
+            class="InputField__Field-sc-jjv066-0 koAYkz"
+          >
+            <div
+              class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+            >
+              <div
+                class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+              >
+                Departure
+              </div>
+              <input
+                aria-labelledby="3"
+                class="InputField__Input-sc-jjv066-6 kPMZTv"
+                data-state="ok"
+                id="3"
+                placeholder="Set date..."
+                type="text"
+                value=""
+              />
+              <div
+                class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="react-datepicker-wrapper"
+      >
+        <div
+          class="react-datepicker__input-container"
+        >
+          <div
+            class="InputField__Field-sc-jjv066-0 koAYkz"
+          >
+            <div
+              class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+            >
+              <div
+                class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+              >
+                Return
+              </div>
+              <input
+                aria-labelledby="4"
+                class="InputField__Input-sc-jjv066-6 kPMZTv"
+                data-state="ok"
+                id="4"
+                placeholder="Set date..."
+                type="text"
+                value=""
+              />
+              <div
+                class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="ButtonPrimitive__StyledButtonPrimitive-sc-1lbd19y-0 jhJQUb"
+        disabled=""
+        type="button"
+      >
+        <div
+          class="ButtonPrimitiveContent__StyledButtonPrimitiveContent-sc-1r81o9a-0 brimGn"
+        >
+          <div
+            class="ButtonPrimitiveContentChildren__StyledButtonPrimitiveContentChildren-sc-1m4y8u8-0 jaHPWv"
+          >
+            Search
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
