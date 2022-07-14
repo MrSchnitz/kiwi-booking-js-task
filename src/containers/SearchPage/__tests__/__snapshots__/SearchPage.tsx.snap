@@ -1,0 +1,1606 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchPage should render basic component 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ fOBtMw"
+  >
+    <div
+      class="sc-dkzDqf oMfPG"
+    >
+      <div
+        class="Grid__StyledGrid-sc-9eqnnl-0 fgKasZ Layout__StyledLayout-sc-2e7ifp-0 jMiYaA"
+      >
+        <main
+          class="LayoutColumn__StyledColumn-sc-7eesuv-0 imJxEk"
+        >
+          <div
+            class="sc-hKMtZM ifmqBm"
+          >
+            <div
+              class="Heading__StyledHeading-sc-rrd5d-0 gurnTJ"
+            >
+              Search for flights
+            </div>
+            <div
+              class="Stack__StyledStack-sc-oaff2v-0 hFnGib"
+            >
+              <div
+                class="Stack__StyledStack-sc-oaff2v-0 jrgtzq"
+              >
+                <div
+                  class="sc-jSMfEi cXCmoX"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        From
+                      </div>
+                      <input
+                        aria-labelledby="1"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="1"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="Stack__StyledStack-sc-oaff2v-0 jrgtzq"
+              >
+                <div
+                  class="sc-jSMfEi cXCmoX"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        To
+                      </div>
+                      <input
+                        aria-labelledby="2"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="2"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="react-datepicker-wrapper"
+              >
+                <div
+                  class="react-datepicker__input-container"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        Departure
+                      </div>
+                      <input
+                        aria-labelledby="3"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="3"
+                        placeholder="Set date..."
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="react-datepicker-wrapper"
+              >
+                <div
+                  class="react-datepicker__input-container"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        Return
+                      </div>
+                      <input
+                        aria-labelledby="4"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="4"
+                        placeholder="Set date..."
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="ButtonPrimitive__StyledButtonPrimitive-sc-1lbd19y-0 jhJQUb"
+                disabled=""
+                type="button"
+              >
+                <div
+                  class="ButtonPrimitiveContent__StyledButtonPrimitiveContent-sc-1r81o9a-0 brimGn"
+                >
+                  <div
+                    class="ButtonPrimitiveContentChildren__StyledButtonPrimitiveContentChildren-sc-1m4y8u8-0 jaHPWv"
+                  >
+                    Search
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div
+      class="sc-gsnTZi bbrVgg"
+    >
+      <div
+        class="Grid__StyledGrid-sc-9eqnnl-0 fgKasZ Layout__StyledLayout-sc-2e7ifp-0 jMiYaA"
+      >
+        <main
+          class="LayoutColumn__StyledColumn-sc-7eesuv-0 imJxEk"
+        >
+          <div
+            class="Stack__StyledStack-sc-oaff2v-0 kZlOWS"
+          >
+            <svg
+              aria-labelledby="9val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="9val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#9val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="9val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="10val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="10val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#10val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="10val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="11val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="11val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#11val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="11val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="12val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="12val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#12val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="12val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="13val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="13val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#13val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="13val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="14val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="14val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#14val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="14val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="15val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="15val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#15val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="15val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="16val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="16val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#16val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="16val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="17val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="17val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#17val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="17val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="18val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="18val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#18val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="18val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SearchPage should render with loading state 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ fOBtMw"
+  >
+    <div
+      class="sc-dkzDqf oMfPG"
+    >
+      <div
+        class="Grid__StyledGrid-sc-9eqnnl-0 fgKasZ Layout__StyledLayout-sc-2e7ifp-0 jMiYaA"
+      >
+        <main
+          class="LayoutColumn__StyledColumn-sc-7eesuv-0 imJxEk"
+        >
+          <div
+            class="sc-hKMtZM ifmqBm"
+          >
+            <div
+              class="Heading__StyledHeading-sc-rrd5d-0 gurnTJ"
+            >
+              Search for flights
+            </div>
+            <div
+              class="Stack__StyledStack-sc-oaff2v-0 hFnGib"
+            >
+              <div
+                class="Stack__StyledStack-sc-oaff2v-0 jrgtzq"
+              >
+                <div
+                  class="sc-jSMfEi cXCmoX"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        From
+                      </div>
+                      <input
+                        aria-labelledby="31"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="31"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="Stack__StyledStack-sc-oaff2v-0 jrgtzq"
+              >
+                <div
+                  class="sc-jSMfEi cXCmoX"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        To
+                      </div>
+                      <input
+                        aria-labelledby="32"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="32"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="react-datepicker-wrapper"
+              >
+                <div
+                  class="react-datepicker__input-container"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        Departure
+                      </div>
+                      <input
+                        aria-labelledby="33"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="33"
+                        placeholder="Set date..."
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="react-datepicker-wrapper"
+              >
+                <div
+                  class="react-datepicker__input-container"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        Return
+                      </div>
+                      <input
+                        aria-labelledby="34"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="34"
+                        placeholder="Set date..."
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="ButtonPrimitive__StyledButtonPrimitive-sc-1lbd19y-0 jhJQUb"
+                disabled=""
+                type="button"
+              >
+                <div
+                  class="ButtonPrimitiveContent__StyledButtonPrimitiveContent-sc-1r81o9a-0 brimGn"
+                >
+                  <div
+                    class="ButtonPrimitiveContentChildren__StyledButtonPrimitiveContentChildren-sc-1m4y8u8-0 jaHPWv"
+                  >
+                    Search
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div
+      class="sc-gsnTZi bbrVgg"
+    >
+      <div
+        class="Grid__StyledGrid-sc-9eqnnl-0 fgKasZ Layout__StyledLayout-sc-2e7ifp-0 jMiYaA"
+      >
+        <main
+          class="LayoutColumn__StyledColumn-sc-7eesuv-0 imJxEk"
+        >
+          <div
+            class="Stack__StyledStack-sc-oaff2v-0 kZlOWS"
+          >
+            <svg
+              aria-labelledby="35val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="35val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#35val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="35val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="36val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="36val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#36val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="36val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="37val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="37val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#37val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="37val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="38val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="38val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#38val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="38val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="39val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="39val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#39val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="39val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="40val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="40val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#40val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="40val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="41val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="41val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#41val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="41val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="42val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="42val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#42val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="42val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="43val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="43val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#43val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="43val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="44val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="44val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#44val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="44val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SearchPage should render without results 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ fOBtMw"
+  >
+    <div
+      class="sc-dkzDqf oMfPG"
+    >
+      <div
+        class="Grid__StyledGrid-sc-9eqnnl-0 fgKasZ Layout__StyledLayout-sc-2e7ifp-0 jMiYaA"
+      >
+        <main
+          class="LayoutColumn__StyledColumn-sc-7eesuv-0 imJxEk"
+        >
+          <div
+            class="sc-hKMtZM ifmqBm"
+          >
+            <div
+              class="Heading__StyledHeading-sc-rrd5d-0 gurnTJ"
+            >
+              Search for flights
+            </div>
+            <div
+              class="Stack__StyledStack-sc-oaff2v-0 hFnGib"
+            >
+              <div
+                class="Stack__StyledStack-sc-oaff2v-0 jrgtzq"
+              >
+                <div
+                  class="sc-jSMfEi cXCmoX"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        From
+                      </div>
+                      <input
+                        aria-labelledby="61"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="61"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="Stack__StyledStack-sc-oaff2v-0 jrgtzq"
+              >
+                <div
+                  class="sc-jSMfEi cXCmoX"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        To
+                      </div>
+                      <input
+                        aria-labelledby="62"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="62"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="react-datepicker-wrapper"
+              >
+                <div
+                  class="react-datepicker__input-container"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        Departure
+                      </div>
+                      <input
+                        aria-labelledby="63"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="63"
+                        placeholder="Set date..."
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="react-datepicker-wrapper"
+              >
+                <div
+                  class="react-datepicker__input-container"
+                >
+                  <div
+                    class="InputField__Field-sc-jjv066-0 koAYkz"
+                  >
+                    <div
+                      class="InputField__InputContainer-sc-jjv066-2 bFmIrl"
+                    >
+                      <div
+                        class="InputField__Prefix-sc-jjv066-4 kUJKxj"
+                      >
+                        Return
+                      </div>
+                      <input
+                        aria-labelledby="64"
+                        class="InputField__Input-sc-jjv066-6 kPMZTv"
+                        data-state="ok"
+                        id="64"
+                        placeholder="Set date..."
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="InputField__FakeInput-sc-jjv066-1 dmsAbX"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="ButtonPrimitive__StyledButtonPrimitive-sc-1lbd19y-0 jhJQUb"
+                disabled=""
+                type="button"
+              >
+                <div
+                  class="ButtonPrimitiveContent__StyledButtonPrimitiveContent-sc-1r81o9a-0 brimGn"
+                >
+                  <div
+                    class="ButtonPrimitiveContentChildren__StyledButtonPrimitiveContentChildren-sc-1m4y8u8-0 jaHPWv"
+                  >
+                    Search
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div
+      class="sc-gsnTZi bbrVgg"
+    >
+      <div
+        class="Grid__StyledGrid-sc-9eqnnl-0 fgKasZ Layout__StyledLayout-sc-2e7ifp-0 jMiYaA"
+      >
+        <main
+          class="LayoutColumn__StyledColumn-sc-7eesuv-0 imJxEk"
+        >
+          <div
+            class="Stack__StyledStack-sc-oaff2v-0 kZlOWS"
+          >
+            <svg
+              aria-labelledby="65val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="65val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#65val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="65val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="66val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="66val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#66val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="66val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="67val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="67val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#67val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="67val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="68val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="68val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#68val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="68val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="69val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="69val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#69val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="69val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="70val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="70val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#70val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="70val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="71val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="71val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#71val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="71val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="72val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="72val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#72val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="72val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="73val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="73val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#73val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="73val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <svg
+              aria-labelledby="74val-title"
+              class="Svg__StyledSvg-sc-v381o6-0 dZyOuY"
+              role="img"
+            >
+              <title
+                id="74val-title"
+              >
+                loading
+              </title>
+              <rect
+                clip-path="url(#74val-clip-clip)"
+                height="100%"
+                role="presentation"
+                style="fill: #E8EDF1;"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="74val-clip-clip"
+                >
+                  <rect
+                    height="100%"
+                    rx="3"
+                    ry="3"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+`;
