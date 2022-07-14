@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## First steps
+
+### Install git hooks `npm run install-hooks`
+
+Install git pre-commit and pre-push hooks.
+
 ## Available Scripts
 
 ### `npm start`
