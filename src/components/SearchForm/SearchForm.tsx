@@ -16,9 +16,9 @@ import {
   SearchParam,
 } from "./SearchFormAPI";
 import { SearchFormWrapper } from "./SearchForm.styles";
-import { City, FlightLocation } from "./SearchForm.types";
 import SearchAutoCompleteInput from "../SearchAutoCompleteInput/SearchAutoCompleteInput";
 import DateInput from "../DateInput/DateInput";
+import { City, FlightLocation } from "../../types/FlightLocationTypes";
 
 interface IProps {
   onSearch?(searchParams: ISearchFormData): void;
@@ -41,23 +41,21 @@ const SearchForm = React.memo(({ onSearch }: IProps) => {
     Array.from(searchParams.values()).filter(Boolean).length !== 4;
 
   useEffect(() => {
-    if (Array.from(searchParams.values()).filter(Boolean).length) {
-      const searchData: ISearchFormData = {
-        [SearchParam.ORIGIN]: "",
-        [SearchParam.DESTINATION]: "",
-        [SearchParam.DATE_FROM]: "",
-        [SearchParam.DATE_TO]: "",
-      };
-      const searchDataKeys = Object.keys(searchData);
+    const searchData: ISearchFormData = {
+      [SearchParam.ORIGIN]: "",
+      [SearchParam.DESTINATION]: "",
+      [SearchParam.DATE_FROM]: "",
+      [SearchParam.DATE_TO]: "",
+    };
+    const searchDataKeys = Object.keys(searchData);
 
-      for (const [k, v] of searchParams.entries()) {
-        if (searchDataKeys.includes(k) && !!v) {
-          searchData[k as SearchParam] = v;
-        }
+    for (const [k, v] of searchParams.entries()) {
+      if (searchDataKeys.includes(k) && !!v) {
+        searchData[k as SearchParam] = v;
       }
-
-      dispatch(SearchFormAPI.loadSearchFormData(searchData));
     }
+
+    dispatch(SearchFormAPI.loadSearchFormData(searchData));
   }, [dispatch, searchParams]);
 
   const onDateInputChange = useCallback(
@@ -78,12 +76,11 @@ const SearchForm = React.memo(({ onSearch }: IProps) => {
 
   const onLocationInputChange = useCallback(
     (value: string, param: SearchParam): void => {
-      console.log("AAA", value, param);
       setActiveInput(param);
       dispatch(
         param === SearchParam.ORIGIN
-          ? SearchFormAPI.changeFromPhrase(value)
-          : SearchFormAPI.changeToPhrase(value)
+          ? SearchFormAPI.changeOriginPhrase(value)
+          : SearchFormAPI.changeDestinationPhrase(value)
       );
     },
     [dispatch]

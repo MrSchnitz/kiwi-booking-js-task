@@ -2,7 +2,10 @@ import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { all, call, debounce, put, takeEvery } from "redux-saga/effects";
 import { RootState } from "../../internals/rootState";
 import { SagaIterator } from "redux-saga";
-import {FlightLocation, FlightLocationsResponse} from "./SearchForm.types";
+import {
+  FlightLocation,
+  FlightLocationsResponse,
+} from "../../types/FlightLocationTypes";
 
 export enum SearchParam {
   ORIGIN = "origin",
@@ -51,7 +54,7 @@ class SearchFormApi {
   /*
    * SLICE
    */
-  private getInitialState(): ISearchFormApi {
+  public getInitialState(): ISearchFormApi {
     return {
       originSearchPhrase: "",
       destinationSearchPhrase: "",
@@ -69,10 +72,10 @@ class SearchFormApi {
     name: "homePageApiSlice",
     initialState: this.getInitialState(),
     reducers: {
-      changeFromPhrase(state, action: PayloadAction<string>) {
+      changeOriginPhrase(state, action: PayloadAction<string>) {
         state.originSearchPhrase = action.payload;
       },
-      changeToPhrase(state, action: PayloadAction<string>) {
+      changeDestinationPhrase(state, action: PayloadAction<string>) {
         state.destinationSearchPhrase = action.payload;
       },
       loadSearchFormData(_, action: PayloadAction<ISearchFormData>) {},
@@ -88,7 +91,7 @@ class SearchFormApi {
   /*
    * SAGAS
    */
-  private *handleSearch(action: PayloadAction<string>): SagaIterator {
+  public *handleSearch(action: PayloadAction<string>): SagaIterator {
     const response = yield call(
       fetch,
       `https://api.skypicker.com/locations?term=${action.payload}&location_types=airport`
@@ -97,7 +100,7 @@ class SearchFormApi {
     yield put(this.slice.actions.setLocations(responseBody.locations));
   }
 
-  private *handleLoadSearchData({
+  public *handleLoadSearchData({
     payload,
   }: PayloadAction<ISearchFormData>): Generator {
     const searchData: ISearchFormData = { ...payload };
@@ -106,7 +109,8 @@ class SearchFormApi {
         this.fetchLocationById,
         searchData[SearchParam.ORIGIN]
       );
-      const location: FlightLocation = (response as FlightLocationsResponse).locations[0];
+      const location: FlightLocation = (response as FlightLocationsResponse)
+        .locations[0];
       searchData[SearchParam.ORIGIN] = location.name;
     }
     if (!!searchData[SearchParam.DESTINATION]) {
@@ -114,7 +118,8 @@ class SearchFormApi {
         this.fetchLocationById,
         searchData[SearchParam.DESTINATION]
       );
-      const location: FlightLocation = (response as FlightLocationsResponse).locations[0];
+      const location: FlightLocation = (response as FlightLocationsResponse)
+        .locations[0];
       searchData[SearchParam.DESTINATION] = location.name;
     }
 
@@ -133,12 +138,12 @@ class SearchFormApi {
    * SAGA - MAIN
    */
   public *saga(): SagaIterator {
-    const { changeFromPhrase, changeToPhrase, loadSearchFormData } =
+    const { changeOriginPhrase, changeDestinationPhrase, loadSearchFormData } =
       this.slice.actions;
     yield all([
       yield debounce(
         500,
-        [changeFromPhrase.type, changeToPhrase.type],
+        [changeOriginPhrase.type, changeDestinationPhrase.type],
         this.handleSearch
       ),
       yield takeEvery(loadSearchFormData.type, this.handleLoadSearchData),
@@ -173,10 +178,12 @@ class SearchFormApi {
   );
 }
 
+export default SearchFormApi.getInstance();
+
 export const {
   actions: SearchFormAPI,
   reducer: SearchFormApiReducer,
-  name,
+  name: SearchFormApiName,
 } = SearchFormApi.getInstance().slice;
 
 export const {
