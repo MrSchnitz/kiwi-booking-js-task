@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation should render basic component 1`] = `
+<div>
+  <nav
+    class="NavigationBar__StyledNavigationBar-sc-xlfrap-1 cCYMaj"
+  >
+    <div
+      class="NavigationBar__StyledNavigationBarContent-sc-xlfrap-0 ffNPfp"
+    >
+      <div
+        class="Stack__StyledStack-sc-oaff2v-0 iYCnXm"
+      >
+        <a
+          href="/"
+        >
+          <button
+            class="ButtonPrimitive__StyledButtonPrimitive-sc-1lbd19y-0 cEBSfu"
+            type="button"
+          >
+            <div
+              class="ButtonPrimitiveContent__StyledButtonPrimitiveContent-sc-1r81o9a-0 brimGn"
+            >
+              <div
+                class="ButtonPrimitiveContentChildren__StyledButtonPrimitiveContentChildren-sc-1m4y8u8-0 jaHPWv"
+              >
+                <img
+                  alt="Kiwi.com logo"
+                  src="https://images.kiwi.com/common/kiwicom-logo.svg"
+                />
+              </div>
+            </div>
+          </button>
+        </a>
+        <div
+          class="Heading__StyledHeading-sc-rrd5d-0 lfBIep"
+        >
+          Kiwi search
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
