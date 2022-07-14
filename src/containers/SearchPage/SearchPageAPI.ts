@@ -74,7 +74,7 @@ class SearchPageApi {
     const { setSearchResults, setIsLoading } = this.slice.actions;
     const response = yield call(
       fetch,
-      `https://api.skypicker.com/flights?v=3&partner=skypicker&locale=en&flyFrom=${origin}&to=${destination}&dateFrom=${dateFrom}&dateTo=${dateFrom}&typeFlight=return&returnFrom=${dateTo}&returnTo=${dateTo}`
+      `https://api.skypicker.com/flights?v=3&limit=50&partner=skypicker&locale=en&flyFrom=${origin}&to=${destination}&dateFrom=${dateFrom}&dateTo=${dateFrom}&typeFlight=return&returnFrom=${dateTo}&returnTo=${dateTo}`
     );
     const responseBody: SearchFlightResponse = yield response.json();
 
