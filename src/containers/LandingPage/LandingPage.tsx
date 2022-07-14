@@ -6,7 +6,7 @@ import {
 import { Layout, LayoutColumn } from "@kiwicom/orbit-components";
 import SearchForm from "../../components/SearchForm/SearchForm";
 
-export default React.memo(function HomePage() {
+export default function HomePage() {
   return (
     <LandingPageWrapper>
       <Layout type="MMB">
@@ -18,4 +18,4 @@ export default React.memo(function HomePage() {
       </Layout>
     </LandingPageWrapper>
   );
-});
+}
