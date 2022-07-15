@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
 import PageLoader from "./components/PageLoader/PageLoader";
+import NoMatchPage from "./containers/NoMatchPage/NoMatchPage";
 
 const AsyncLandingPage = lazy(
   () => import("./containers/LandingPage/LandingPage")
@@ -13,8 +14,8 @@ const AsyncSearchPage = lazy(
 export function AppRoutes() {
   return (
     <BrowserRouter>
-      <Navigation />
       <Routes>
+        <Navigation />
         <Route
           path="/"
           element={
@@ -31,6 +32,7 @@ export function AppRoutes() {
             </Suspense>
           }
         />
+        <Route path="*" element={<NoMatchPage />} />
       </Routes>
     </BrowserRouter>
   );
