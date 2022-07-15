@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoMatchPage should render basic component 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ hfDjeB"
+  >
+    <div
+      class="Stack__StyledStack-sc-oaff2v-0 eWjCkv"
+    >
+      <div
+        class="Heading__StyledHeading-sc-rrd5d-0 joCkMC"
+      >
+        Sorry, nothing to see here!
+      </div>
+      <img
+        alt="Error404"
+        class="IllustrationPrimitive__StyledImage-sc-2hh260-0 lkLFfm"
+        src="//images.kiwi.com/illustrations/0x200/Error404-Q85.png"
+        srcset="//images.kiwi.com/illustrations/0x400/Error404-Q85.png 2x, //images.kiwi.com/illustrations/0x600/Error404-Q85.png 3x"
+      />
+      <a
+        href="/"
+      >
+        <button
+          class="ButtonPrimitive__StyledButtonPrimitive-sc-1lbd19y-0 iRvWIY"
+          type="button"
+        >
+          <div
+            class="ButtonPrimitiveContent__StyledButtonPrimitiveContent-sc-1r81o9a-0 brimGn"
+          >
+            <div
+              class="ButtonPrimitiveContentChildren__StyledButtonPrimitiveContentChildren-sc-1m4y8u8-0 jaHPWv"
+            >
+              Return to homepage
+            </div>
+          </div>
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;
