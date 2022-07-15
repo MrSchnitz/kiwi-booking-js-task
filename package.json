@@ -1,7 +1,10 @@
 {
   "name": "kiwi-booking-js-task",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Kiwi Javascript developer task - Booking Tribe",
+  "author": "Jan Bauer",
   "private": true,
+  "license": "WTFPL",
   "dependencies": {
     "@kiwicom/orbit-components": "^3.1.0",
     "@reduxjs/toolkit": "^1.8.3",
