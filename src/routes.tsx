@@ -14,8 +14,8 @@ const AsyncSearchPage = lazy(
 export function AppRoutes() {
   return (
     <BrowserRouter>
+      <Navigation />
       <Routes>
-        <Navigation />
         <Route
           path="/"
           element={
