@@ -92,38 +92,52 @@ class SearchFormApi {
    * SAGAS
    */
   public *handleSearch(action: PayloadAction<string>): SagaIterator {
-    const response = yield call(
-      fetch,
-      `https://api.skypicker.com/locations?term=${action.payload}&location_types=airport`
-    );
-    const responseBody: FlightLocationsResponse = yield response.json();
-    yield put(this.slice.actions.setLocations(responseBody.locations));
+    try {
+      const response = yield call(
+        fetch,
+        `https://api.skypicker.com/locations?term=${action.payload}&location_types=airport`
+      );
+      const responseBody: FlightLocationsResponse = yield response.json();
+      yield put(this.slice.actions.setLocations(responseBody.locations));
+    } catch (error) {
+      console.error(error);
+      yield put(this.slice.actions.setLocations([]));
+    }
   }
 
   public *handleLoadSearchData({
     payload,
   }: PayloadAction<ISearchFormData>): Generator {
     const searchData: ISearchFormData = { ...payload };
-    if (!!searchData[SearchParam.ORIGIN]) {
-      const response = yield call(
-        this.fetchLocationById,
-        searchData[SearchParam.ORIGIN]
-      );
-      const location: FlightLocation = (response as FlightLocationsResponse)
-        .locations[0];
-      searchData[SearchParam.ORIGIN] = location.name;
-    }
-    if (!!searchData[SearchParam.DESTINATION]) {
-      const response = yield call(
-        this.fetchLocationById,
-        searchData[SearchParam.DESTINATION]
-      );
-      const location: FlightLocation = (response as FlightLocationsResponse)
-        .locations[0];
-      searchData[SearchParam.DESTINATION] = location.name;
-    }
+    try {
+      if (!!searchData[SearchParam.ORIGIN]) {
+        const response = yield call(
+          this.fetchLocationById,
+          searchData[SearchParam.ORIGIN]
+        );
+        const location: FlightLocation = (response as FlightLocationsResponse)
+          .locations[0];
+        searchData[SearchParam.ORIGIN] = location.name;
+      }
+      if (!!searchData[SearchParam.DESTINATION]) {
+        const response = yield call(
+          this.fetchLocationById,
+          searchData[SearchParam.DESTINATION]
+        );
+        const location: FlightLocation = (response as FlightLocationsResponse)
+          .locations[0];
+        searchData[SearchParam.DESTINATION] = location.name;
+      }
 
-    yield put(this.slice.actions.setSearchFormData(searchData));
+      yield put(this.slice.actions.setSearchFormData(searchData));
+    } catch (error) {
+      console.error(error);
+      yield put(
+        this.slice.actions.setSearchFormData(
+          this.getInitialState().searchFormData
+        )
+      );
+    }
   }
 
   private *fetchLocationById(locationId: string): SagaIterator {
