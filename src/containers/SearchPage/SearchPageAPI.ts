@@ -72,14 +72,20 @@ class SearchPageApi {
     payload: { origin, destination, dateFrom, dateTo },
   }: PayloadAction<SearchParams>): SagaIterator {
     const { setSearchResults, setIsLoading } = this.slice.actions;
-    const response = yield call(
-      fetch,
-      `https://api.skypicker.com/flights?v=3&limit=50&partner=skypicker&locale=en&flyFrom=${origin}&to=${destination}&dateFrom=${dateFrom}&dateTo=${dateFrom}&typeFlight=return&returnFrom=${dateTo}&returnTo=${dateTo}`
-    );
-    const responseBody: SearchFlightResponse = yield response.json();
+    try {
+      const response = yield call(
+        fetch,
+        `https://api.skypicker.com/flights?v=3&limit=50&partner=skypicker&locale=en&flyFrom=${origin}&to=${destination}&dateFrom=${dateFrom}&dateTo=${dateFrom}&typeFlight=return&returnFrom=${dateTo}&returnTo=${dateTo}`
+      );
+      const responseBody: SearchFlightResponse = yield response.json();
 
-    yield put(setIsLoading(false));
-    yield put(setSearchResults(responseBody.data));
+      yield put(setIsLoading(false));
+      yield put(setSearchResults(responseBody.data));
+    } catch (error) {
+      console.error(error);
+      yield put(setIsLoading(false));
+      yield put(setSearchResults([]));
+    }
   }
 
   /*
